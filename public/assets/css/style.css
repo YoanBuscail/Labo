@@ -1,0 +1,98 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 6em;
+}
+
+.subtitle {
+    font-size: 3em;
+}
+
+.reveal [class*="reveal-"] {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-visible [class*="reveal-"] {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(0.5,0,0,1);
+}
+
+.reveal-visible .reveal-2 {
+    transition-delay: 0.1s;
+}
+
+.reveal-visible .reveal-3 {
+    transition-delay: 0.2s;
+}
+
+.general_wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.intro_wrapper{
+    color: white;
+    background-image: url(../images/tableau.jpg);
+    
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    flex-direction: column;
+}
+
+.a-propos_general_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+h2 {
+    text-align: center;
+}
+
+.a-propos_wrapper_container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%; 
+    max-width: 1200px; 
+}
+
+.a-propos_wrapper_left,
+.a-propos_wrapper_right {
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+}
+
+.waffle_picture {
+    max-width: 50%;
+    height: auto;
+    clip-path: ellipse(33% 50%);
+    margin: 2em;
+}
+
+@media (min-width: 768px) {
+    .a-propos_wrapper_container {
+        flex-direction: row; /* On larger screens, display the sections side by side */
+    }
+
+    .a-propos_wrapper_left,
+    .a-propos_wrapper_right {
+        width: 50%;
+    }
+}
+
+.intro_wrapper, .a-propos_general_wrapper, .menu_wrapper, .opening-time_wrapper, .access_wrapper, .service_wrapper, .reservation_wrapper, .contact_wrapper {
+    height: 100vh;
+}

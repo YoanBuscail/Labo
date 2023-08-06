@@ -15,10 +15,7 @@
                         <a class="nav-link" href="">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Horaires d'ouverture</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Accès</a>
+                        <a class="nav-link" href="">Informations</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="">Services</a>

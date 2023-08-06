@@ -137,42 +137,72 @@
         <a href="">Télécharger le menu</a>
     </div>
 </div>
-
+  
+<div class="general_wrapper reveal">
+    <div class="general_container">
+        <h2 class="reveal-1">Informations</h2>
+        <section class="wrapper_container">
+            <section class="wrapper_left">
+                <h3 class="reveal-1">Accès</h2>
+                <div style="width: 100%"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=400&amp;hl=fr&amp;q=25%20rue%20du%20pila%20st%20g%C3%A9ly+(Le%20labo%20de%20la%20gaufre)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+                <div class="access_info">
+                    <p>Situés dans l'une des rues les plus connues de Montpellier pour ses nombreux restaurants, Le Labo De la Gaufre est facilement accessible en voiture, en tram ou à pied.</p>
+                    <p>Les parkings du corum ou de la Comédie ainsi que l'arrêt de tram du Corum se situent à quelques mètres.</p> 
+                    <p>Perdez-vous dans le centre historique de la ville et retrouvée la place de la Comédie, le coeur de la ville, en seulement quelques minutes.</p>
+                </div>
+            </section>
+            <section class="wrapper_right">
+                <h3 class="reveal-1">Horaires d'ouverture</h2>
+                    <div class="access_info">
+                        <div class="time_container">
+                            <div class="jour1">Lundi</div>
+                            <div class="jour2">Mardi</div>
+                            <div class="jour3">Mercredi</div>
+                            <div class="jour4">Jeudi</div>
+                            <div class="jour5">Vendredi</div>
+                            <div class="jour6">Samedi</div>
+                            <div class="jour7">Dimanche</div>
+                            <div class="horaire1">12h - 14h
+                                <div class="horaire1bis">19h - 22h30</div>
+                            </div>
+                            <div class="horaire2">12h - 14h
+                                <div class="horaire2bis">19h - 22h30</div>
+                            </div>
+                            <div class="horaire3">12h - 14h
+                                <div class="horaire3bis">19h - 22h30</div>
+                            </div>
+                            <div class="horaire4">12h - 14h
+                                <div class="horairebis">19h - 22h30</div>
+                            </div>
+                            <div class="horaire5">12h - 14h
+                                <div class="horaire5bis">19h - 22h30</div>
+                            </div>
+                            <div class="horaire6">12h - 14h
+                                <div class="horaire6bis">19h - 22h30</div>
+                            </div>
+                            <div class="horaire7">Fermé</div>
+                        </div>
+                    </div>
+            </section>
+        </section>
+    </div>
 </div>
-    <div class="general_wrapper reveal">
-        <h2 class="reveal-1">Horaires d'ouverture</h2>
-            <ul>
-                <li>Lundi</li>
-                <li>Mardi</li>
-                <li>Mercredi</li>
-                <li>Jeudi</li>
-                <li>Vendredi</li>
-                <li>Samedi</li>
-                <li>Dimanche</li>
-            </ul>
-    </div>
 
-    <div class="general_wrapper reveal">
-        <h2 class="reveal-1">Accès</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit molestiae fugiat corporis repellendus! In vero repellendus voluptatum ut corrupti beatae libero debitis temporibus! Esse quaerat sed assumenda dolor! Sequi.
-        </p>
-    </div>
+<div class="general_wrapper reveal">
+    <h2 class="reveal-1">Services</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit molestiae fugiat corporis repellendus! In vero repellendus voluptatum ut corrupti beatae libero debitis temporibus! Esse quaerat sed assumenda dolor! Sequi.
+    </p>
+</div>
 
-    <div class="general_wrapper reveal">
-        <h2 class="reveal-1">Services</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit molestiae fugiat corporis repellendus! In vero repellendus voluptatum ut corrupti beatae libero debitis temporibus! Esse quaerat sed assumenda dolor! Sequi.
-        </p>
-    </div>
+<div class="general_wrapper reveal">
+    <h2 class="reveal-1">Réservation</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit molestiae fugiat corporis repellendus! In vero repellendus voluptatum ut corrupti beatae libero debitis temporibus! Esse quaerat sed assumenda dolor! Sequi.
+    </p>
+</div>
 
-    <div class="general_wrapper reveal">
-        <h2 class="reveal-1">Réservation</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit molestiae fugiat corporis repellendus! In vero repellendus voluptatum ut corrupti beatae libero debitis temporibus! Esse quaerat sed assumenda dolor! Sequi.
-        </p>
-    </div>
-
-    <div class="general_wrapper reveal">
-        <h2 class="reveal-1">Contact</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit molestiae fugiat corporis repellendus! In vero repellendus voluptatum ut corrupti beatae libero debitis temporibus! Esse quaerat sed assumenda dolor! Sequi.
-        </p>
-    </div>
+<div class="general_wrapper reveal">
+    <h2 class="reveal-1">Contact</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit molestiae fugiat corporis repellendus! In vero repellendus voluptatum ut corrupti beatae libero debitis temporibus! Esse quaerat sed assumenda dolor! Sequi.
+    </p>
 </div>

@@ -86,6 +86,109 @@ h2 {
     margin: 1em;
 }
 
+.access_info {
+    margin-top: 4em;
+}
+
+.time_container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 20px 60px; 
+    grid-template-areas: 
+      "jour1 horaire1"
+      "jour2 horaire2"
+      "jour3 horaire3"
+      "jour4 horaire4"
+      "jour5 horaire5"
+      "jour6 horaire6"
+      "jour7 horaire7"; 
+    justify-items: start; 
+    align-items: center; 
+    width: 70%; 
+  }
+  
+.jour1 { grid-area: jour1; }
+
+.jour2 { grid-area: jour2; }
+
+.jour3 { grid-area: jour3; }
+
+.jour4 { grid-area: jour4; }
+
+.jour5 { grid-area: jour5; }
+
+.jour6 { grid-area: jour6; }
+
+.jour7 { grid-area: jour7; }
+
+.horaire1 {  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-template-areas:
+    "."
+    "horaire1bis";
+grid-area: horaire1;
+}
+
+.horaire1bis { grid-area: horaire1bis; }
+
+.horaire2 {  display: grid;
+grid-template-rows: 1fr 1fr;
+grid-auto-columns: 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-area: horaire2;
+}
+
+.horaire2bis { grid-area: 2 / 1 / 3 / 2; }
+
+.horaire3 {  display: grid;
+grid-template-rows: 1fr 1fr;
+grid-auto-columns: 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-area: horaire3;
+}
+
+.horaire3bis { grid-area: 2 / 1 / 3 / 2; }
+
+.horaire4 {  display: grid;
+grid-template-rows: 1fr 1fr;
+grid-auto-columns: 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-area: horaire4;
+}
+
+.horairebis { grid-area: 2 / 1 / 3 / 2; }
+
+.horaire5 {  display: grid;
+grid-template-rows: 1fr 1fr;
+grid-auto-columns: 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-area: horaire5;
+}
+
+.horaire5bis { grid-area: 2 / 1 / 3 / 2; }
+
+.horaire6 {  display: grid;
+grid-template-rows: 1fr 1fr;
+grid-auto-columns: 1fr;
+gap: 0px 0px;
+grid-auto-flow: row;
+grid-area: horaire6;
+}
+
+.horaire6bis { grid-area: 2 / 1 / 3 / 2; }
+
+.horaire7 { grid-area: horaire7; }
+
+
+
 /* slider */
 .items {
     transform: translate(-50%, -50%);
@@ -171,3 +274,4 @@ float: left;
 .button-container .button:nth-child(2) {
 float: right;
 }
+

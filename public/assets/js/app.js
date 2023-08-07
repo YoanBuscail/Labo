@@ -1,3 +1,5 @@
+/* REVEAL */
+
 const ratio = 0.1;
 const options = {
 root: null,
@@ -19,7 +21,7 @@ document.querySelectorAll('.reveal').forEach(function(reveal){
     observer.observe(reveal)
 })
 
-// I will be creating a different pen with touch support but right // now I have no time for it due to school
+/* SLIDER */
 
 const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
@@ -60,3 +62,27 @@ slides[current].classList.add("active");
 slides[prev].classList.add("prev");
 slides[next].classList.add("next");
 }
+
+
+
+const navLinks = [...document.querySelectorAll("nav a")]
+const sections = [...document.querySelectorAll("section")]
+let sectionsPosition;
+
+function positionCalcul () {
+    sectionsPosition = sections.map(section=>section.offsetTop)
+} 
+
+positionCalcul()
+
+navLinks.forEach(link => link.addEventListener("click", addScrollSmooth))
+
+function addScrollSmooth(e){
+    const linkIndex = navLinks.indexOf(e.target)
+    window.scrollTo({
+        top: sectionsPosition[linkIndex],
+        behavior: "smooth"
+    })
+}
+
+window.addEventListener("resize", positionCalcul)

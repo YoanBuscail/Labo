@@ -13,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/c86588d5fc.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/favicon.ico" href="<?= $assetsBaseUri ?>images/favicon.ico">
 
     <!-- We can still have our own CSS file -->
     <link rel="stylesheet" href="<?= $assetsBaseUri ?>css/style.css">

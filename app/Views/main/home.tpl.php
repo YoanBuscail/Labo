@@ -1,25 +1,26 @@
+<section class="section-1">
 <div class="intro_wrapper reveal">
     <h1 class="reveal-1">Le Labo de la Gaufre</h1>
     <span class="subtitle reveal-2">Fresh and Original Food</span>
 </div>
+</section>
 
-<div class="general_wrapper">
+<section class="section-2">
+<div class="general_wrapper nav-section reveal" id="about">
     <div class="general_container reveal">
         <h2 class="reveal-1">A propos de nous</h2>
-        <section class="wrapper_container">
+        <div class="wrapper_container">
             <div class="wrapper_left">
-                <p class="reveal-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ad. Dolor, tempora quod sunt cupiditate tempore perferendis sapiente labore quae ut, neque, asperiores impedit aliquam quos nostrum aliquid! Ducimus, earum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ad. Dolor, tempora quod sunt cupiditate tempore perferendis sapiente labore quae ut, neque, asperiores impedit aliquam quos nostrum aliquid! Ducimus, earum.
+                <p class="reveal-2">Bienvenue dans notre restaurant spécialisé dans les gaufres salées et sucrées. Découvrez notre menu original de gaufres salées, des classiques réinventés aux créations uniques, comme la Lasagne gratinée à l'emmental ou encore la Gaufre Burger généreusement garnie.
                 </p>
                 <img class="waffle_picture reveal-2" src="<?= $assetsBaseUri ?>images/thai.jpg" alt="gaufre thaï" />
             </div>
             <div class="wrapper_right">
                 <img class="waffle_picture reveal-3" src="<?= $assetsBaseUri ?>images/burger.jpg" alt="gaufre burger" />
-                <p class="reveal-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ad. Dolor, tempora quod sunt cupiditate tempore perferendis sapiente labore quae ut, neque, asperiores impedit aliquam quos nostrum aliquid! Ducimus, earum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ad. Dolor, tempora quod sunt cupiditate tempore perferendis sapiente labore quae ut, neque, asperiores impedit aliquam quos nostrum aliquid! Ducimus, earum.
+                <p class="reveal-3">Pour les gourmands, on a des gaufres sucrées avec Nutella, caramel, et bien plus. Nos Spéciales M&M's et Kinder Surprise vous surprendront ! Venez vous régaler dans une ambiance conviviale et découvrez le plaisir des gaufres revisitées ! 
                 </p>
             </div>
-        </section>
+        </div>
         <div class="items reveal-4">
             <div class="item active">
                 <img src="<?= $assetsBaseUri ?>images/burger-raclette.png">
@@ -54,19 +55,21 @@
             <div class="item prev">
                 <img src="<?= $assetsBaseUri ?>images/raclette.png">
             </div>
-		<div class="button-container">
-			<div class="button"><i class="fas fa-angle-left"></i></div>
-			<div class="button"><i class="fas fa-angle-right"></i></div>
-		</div>
-	</div>
+            <div class="button-container">
+                <div class="button"><i class="fas fa-angle-left"></i></div>
+                <div class="button"><i class="fas fa-angle-right"></i></div>
+            </div>
+	    </div>
     </div>
 </div>
+</section>
 
-<div class="general_wrapper reveal">
-    <div class="general_container">
+<section class="section-3">
+<div class="general_wrapper nav-section reveal"  id="menu">
+    <div class="general_container reveal">
         <h2 class="reveal-1">Menu</h2>
-        <section class="wrapper_container">
-            <section class="wrapper_left">
+        <div class="wrapper_container">
+            <div class="wrapper_left">
                 <h3>Les Gaufres salées</h3>
                 <ul>
                     <li>La Lasagne
@@ -91,21 +94,14 @@
                     <li>La Gambas
                     Gambas et spaghetti de légumes à la sauce Thaï pimentée, sauce Curry Coco</li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="wrapper_right">
+            <div class="wrapper_right">
                 <h3>Les Gaufres sucrées</h3>
                 <ul>
                     <li>Les Gaufres à Composer
                         <ul>
-                            <li>Nutella</li>
-                            <li>Chocolat chaud maison</li>
-                            <li>Caramel au beurre salé maison</li>
-                            <li>Confiture fraise/framboise/abricot</li>
-                            <li>Crème de Spéculoos</li>
-                            <li>Crème de marron</li>
-                            <li>Chocolat blanc maison</li>
-                            <li>Miel</li>
+                            <li>Nutella / Chocolat chaud maison / Caramel au beurre salé maison / Confiture fraise/framboise/abricot / Crème de Spéculoos / Crème de marron / Chocolat blanc maison / Miel</li>
                         </ul>
                     </li>
                     <li>Les Crèmes Maison
@@ -132,28 +128,29 @@
                     Mouillettes de gaufres avec 3 accompagnements au choix + glace vanille
                     </li>
                 </ul>
-            </section>
-        </section>
+            </div>
+        </div>
         <a href="">Télécharger le menu</a>
     </div>
 </div>
-  
-<div class="general_wrapper reveal">
-    <div class="general_container">
+</section>
+
+<section class="section-4">
+<div class="general_wrapper nav-section reveal"  id="acces">
+    <div class="general_container reveal">
         <h2 class="reveal-1">Informations</h2>
-        <section class="wrapper_container">
-            <section class="wrapper_left">
+        <div class="wrapper_container">
+            <div class="wrapper_left">
                 <h3 class="reveal-1">Accès</h2>
                 <div style="width: 100%"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=400&amp;hl=fr&amp;q=25%20rue%20du%20pila%20st%20g%C3%A9ly+(Le%20labo%20de%20la%20gaufre)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 </div>
                 <div class="access_info">
                     <p>Situés dans l'une des rues les plus connues de Montpellier pour ses nombreux restaurants, Le Labo De la Gaufre est facilement accessible en voiture, en tram ou à pied.</p>
                     <p>Les parkings du corum ou de la Comédie ainsi que l'arrêt de tram du Corum se situent à quelques mètres.</p> 
-                    <p>Perdez-vous dans le centre historique de la ville et retrouvée la place de la Comédie, le coeur de la ville, en seulement quelques minutes.</p>
                 </div>
-            </section>
-            <section class="wrapper_right">
-                <h3 class="reveal-1">Horaires d'ouverture</h2>
+            </div>
+            <div class="wrapper_right">
+                <h3 class="reveal-1">Horaires d'ouverture</h3>
                     <div class="access_info">
                         <div class="time_container">
                             <div class="jour1">Lundi</div>
@@ -184,25 +181,45 @@
                             <div class="horaire7">Fermé</div>
                         </div>
                     </div>
-            </section>
-        </section>
+            </div>
+        </div>
     </div>
 </div>
+</section>
 
-<div class="general_wrapper reveal">
-    <h2 class="reveal-1">Services</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit molestiae fugiat corporis repellendus! In vero repellendus voluptatum ut corrupti beatae libero debitis temporibus! Esse quaerat sed assumenda dolor! Sequi.
-    </p>
-</div>
+<section class="section-5">
+<div class="general_wrapper nav-section reveal" id="contact">
+    <div class="general_container reveal">
+        <h2 class="reveal-1">Contact</h2>
+        <div class="wrapper_container">
+            <div class="wrapper_left">
+                <h3>Une demande particulière ?</h3>
+                <div class="contact_container">
+                    <form action="/action_page.php">
+                        <label for="fname">Nom & prénom</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
 
-<div class="general_wrapper reveal">
-    <h2 class="reveal-1">Réservation</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit molestiae fugiat corporis repellendus! In vero repellendus voluptatum ut corrupti beatae libero debitis temporibus! Esse quaerat sed assumenda dolor! Sequi.
-    </p>
-</div>
+                        <label for="sujet">Sujet</label>
+                        <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
 
-<div class="general_wrapper reveal">
-    <h2 class="reveal-1">Contact</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit molestiae fugiat corporis repellendus! In vero repellendus voluptatum ut corrupti beatae libero debitis temporibus! Esse quaerat sed assumenda dolor! Sequi.
-    </p>
+                        <label for="emailAddress">Email</label>
+                        <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+
+                        <label for="subject">Message</label>
+                        <textarea id="subject" name="subject" placeholder="Votre message" style="height:150px"></textarea>
+
+                        <input type="submit" value="Envoyer">
+                    </form>
+                </div>
+            </div>
+            <div class="wrapper_right">
+                <h3 class="reveal-1">Réservation</h3>
+                <div class="access_info">
+                    <p>Pour toute demande de réservation,  contactez-nous au 09.83.88.90.90</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+</section>

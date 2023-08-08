@@ -28,7 +28,7 @@ const slides = document.querySelectorAll(".item");
 const button = document.querySelectorAll(".button");
 
 let current = 0;
-let prev = 4;
+let prev = 14;
 let next = 1;
 
 for (let i = 0; i < button.length; i++) {
@@ -37,7 +37,7 @@ button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
 
 const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
 
-const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+const gotoNext = () => current < 13 ? gotoNum(current + 1) : gotoNum(0);
 
 const gotoNum = number => {
 current = number;
@@ -50,12 +50,12 @@ for (let i = 0; i < slides.length; i++) {
 	slides[i].classList.remove("next");
 }
 
-if (next == 5) {
+if (next == 14) {
 	next = 0;
 }
 
 if (prev == -1) {
-	prev = 4;
+	prev = 14;
 }
 
 slides[current].classList.add("active");
@@ -86,3 +86,37 @@ function addScrollSmooth(e){
 }
 
 window.addEventListener("resize", positionCalcul)
+
+/* BUTTON UP */
+
+const btn = document.querySelector('.btn');
+
+btn.addEventListener("click", addScrollUp)
+
+function addScrollUp(){
+    window.scrollTo ({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+}
+
+/* ZOOM GALLERY */
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll(".img-responsive");
+    const toggleModal = () => {
+        document.querySelector('.modal-dialog').classList.toggle('show');
+    };
+    images.forEach(function(image) {
+        image.addEventListener("click", function() {
+            const src = image.getAttribute("src");
+            const modalContent = "<img src='" + src + "' class='modal-img'>";
+            const modalBody = document.querySelector(".modal-body");
+            modalBody.innerHTML = modalContent;
+            const modal = document.querySelector("#myModal");
+            modal.style.display = "block";
+            toggleModal();
+        });
+    });    
+});

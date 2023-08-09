@@ -103,13 +103,24 @@ function addScrollUp(){
 
 /* ZOOM GALLERY */
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const images = document.querySelectorAll(".img-responsive");
+    const modalBackdrop = document.querySelector('.modal-backdrop');
+
     const toggleModal = () => {
-        document.querySelector('.modal-dialog').classList.toggle('show');
+        const modalDialog = document.querySelector('.modal-dialog');
+        modalDialog.classList.toggle('show');
+        modalBackdrop.classList.toggle('show');
     };
-    images.forEach(function(image) {
-        image.addEventListener("click", function() {
+
+    const closeModal = () => {
+        const modalDialog = document.querySelector('.modal-dialog');
+        modalDialog.classList.remove('show');
+        modalBackdrop.classList.remove('show');
+    };
+
+    images.forEach(function (image) {
+        image.addEventListener("click", function () {
             const src = image.getAttribute("src");
             const modalContent = "<img src='" + src + "' class='modal-img'>";
             const modalBody = document.querySelector(".modal-body");
@@ -118,5 +129,11 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.style.display = "block";
             toggleModal();
         });
-    });    
+    });
+
+    // Ajout de l'événement de clic pour fermer la modal lorsque l'utilisateur clique dessus
+    const modalDialog = document.querySelector('.modal-dialog');
+    modalDialog.addEventListener("click", function (event) {
+        closeModal();
+    });
 });

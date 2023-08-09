@@ -165,15 +165,13 @@
         <img src="<?= $assetsBaseUri ?>images/toblerone" class="img-responsive" alt="gaufre toblerone">
         <img src="<?= $assetsBaseUri ?>images/verre" class="img-responsive" alt="verres">
     </div>
-    <div id="myModal">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-body">
-                </div>
+    <div class="modal-backdrop"></div>
+    <div id="myModal" class="modal-dialog">           
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
             </div>
-         </div>
+        </div>
     </div>
 </section>
 
@@ -237,22 +235,34 @@
                 <div class="wrapper_left">
                     <h3>Une demande particulière ?</h3>
                     <div class="contact_container">
-                        <form action="/action_page.php">
+                        <form action="<?= $baseUri ?>" method="post">
                             <label for="fname">Nom & prénom</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+                            <input type="text" id="fname" name="name" placeholder="Votre nom et prénom" required>
 
                             <label for="sujet">Sujet</label>
-                            <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+                            <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message" required>
 
-                            <label for="emailAddress">Email</label>
-                            <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Votre email" required>
 
 
                             <label for="subject">Message</label>
-                            <textarea id="subject" name="subject" placeholder="Votre message" style="height:150px"></textarea>
+                            <textarea id="subject" name="message" placeholder="Votre message" style="height:150px" required></textarea>
 
                             <input type="submit" value="Envoyer">
                         </form>
+                        <?php
+                            if (isset($_POST["message"])) {
+                                $message = "Ce message est envoyé via le formuliare de contact du Labo de la Gaufre
+                                Nom : " . $_POST["name"] . "
+                                Email : " . $_POST["email"] . "
+                                Message : " . $_POST["message"];
+
+                                $retour = mail('yoan.buscail@gmail.com', $_POST["sujet"], $message, "From: contact@exemplesite.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
+                                if($retour)
+                                    echo '<p>Votre message a bien été envoyé.</p>';
+                            }
+                        ?>
                     </div>
                 </div>
                 <div class="wrapper_right">

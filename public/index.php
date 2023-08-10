@@ -33,6 +33,17 @@ $router->map(
     'main-home'
 );
 
+$router->map(
+    'POST',
+    '/',
+    [
+        'method' => 'contactForm',
+        'controller' => 'MainController'
+    ],
+    'main-contactForm'
+);
+
+
 /* -------------
 --- DISPATCH ---
 --------------*/

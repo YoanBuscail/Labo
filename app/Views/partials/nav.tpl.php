@@ -15,6 +15,9 @@
                         <a class="nav-link" href="#menu">Menu</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#gallerie">Gallerie</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#acces">Accès | Horaires</a>
                     </li>
                     <li class="nav-item">

@@ -63,7 +63,7 @@ slides[prev].classList.add("prev");
 slides[next].classList.add("next");
 }
 
-
+/* SCROLL TO */
 
 const navLinks = [...document.querySelectorAll("nav a")]
 const sections = [...document.querySelectorAll("section")]
@@ -135,5 +135,45 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalDialog = document.querySelector('.modal-dialog');
     modalDialog.addEventListener("click", function (event) {
         closeModal();
+    });
+});
+
+/* CONTACT FORM */
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Récupérer le paramètre 'message' de l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const message = urlParams.get("message");
+
+    // Sélectionner les fenêtres modales
+    const modals = document.querySelectorAll(".modal");
+    const modalContent = modals[0].querySelector(".modal-content"); // Sélectionner le contenu d'une seule modal
+
+    // Sélectionner les boutons de fermeture des modals
+    const modalCloses = document.querySelectorAll(".modal-close");
+
+    // Si le paramètre 'message' est 'success', afficher la fenêtre modale de succès
+    if (message === "success") {
+        modalContent.textContent = "Votre message a bien été envoyé.";
+        modals.forEach((modal) => {
+            modal.classList.add("success");
+            modal.style.display = "block";
+        });
+    } else if (message === "error") {
+        modalContent.textContent =
+            "Une erreur s'est produite lors de l'envoi du message.";
+        modals.forEach((modal) => {
+            modal.classList.add("error");
+            modal.style.display = "block";
+        });
+    }
+
+    // Gérer la fermeture des modals
+    modalCloses.forEach((closeButton) => {
+        closeButton.addEventListener("click", function () {
+            modals.forEach((modal) => {
+                modal.style.display = "none";
+            });
+        });
     });
 });

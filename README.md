@@ -20,9 +20,9 @@ Le site comprend cinq principales sections :
 
 ### Captures d'écran
 
-![Capture d'écran 2023-10-06 135545](https://github.com/YoanBuscail/Labo/assets/131248915/4a72ac41-83d4-4c5b-a014-c7c2d2e31dd1)
-![Capture d'écran 2023-10-06 135618](https://github.com/YoanBuscail/Labo/assets/131248915/62d05931-44ed-4a22-bbbe-f8a31b00083d)
-![Capture d'écran 2023-10-06 135700](https://github.com/YoanBuscail/Labo/assets/131248915/534dbfdf-2b1f-446e-9427-36352b9e7782)
+![Capture d'écran 2023-10-06 135618](https://github.com/YoanBuscail/Labo/assets/131248915/56626813-6568-4f3c-988d-3473c389b3f9)
+
+![Capture d'écran 2023-10-06 135700](https://github.com/YoanBuscail/Labo/assets/131248915/59f05eff-bf82-4183-bb10-7ad6f33ab8de)
 
 
 ### Technologies Utilisées

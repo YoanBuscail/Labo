@@ -18,6 +18,13 @@ Le site comprend cinq principales sections :
 - **Accès & Horaires** : Informations pratiques, y compris l'adresse, les heures d'ouverture et les moyens d'accès.
 - **Contact** : Un moyen de nous joindre pour les réservations, questions ou commentaires.
 
+### Captures d'écran
+
+![Capture d'écran 2023-10-06 135545](https://github.com/YoanBuscail/Labo/assets/131248915/4a72ac41-83d4-4c5b-a014-c7c2d2e31dd1)
+![Capture d'écran 2023-10-06 135618](https://github.com/YoanBuscail/Labo/assets/131248915/62d05931-44ed-4a22-bbbe-f8a31b00083d)
+![Capture d'écran 2023-10-06 135700](https://github.com/YoanBuscail/Labo/assets/131248915/534dbfdf-2b1f-446e-9427-36352b9e7782)
+
+
 ### Technologies Utilisées
 
 J'ai utilisé un ensemble de technologies pour créer ce site web, notamment :
